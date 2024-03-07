@@ -8,7 +8,7 @@ services:
     environment:
       - TZ=Asia/Shanghai
     volumes:
-      - .v2ray:/etc/v2ray
+      - ./v2ray/config.json:/etc/v2ray/config.json
     ports:
       - "8888:8888"
     restart: always
