@@ -4,7 +4,7 @@ services:
   v2ray:
     container_name: v2ray_cdn
     image: v2ray/official
-    command: /usr/bin/v2ray -c /etc/v2ray/config.json
+    command: /tmp/run -c /etc/v2ray/config.json
     environment:
       - TZ=Asia/Shanghai
     volumes:
